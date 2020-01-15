@@ -598,59 +598,59 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x08 J5
 U 1 1 5E270F48
-P 7700 4900
-F 0 "J5" H 7618 5417 50  0000 C CNN
-F 1 "Screw_Terminal_01x08" H 7618 5326 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-8-5.08_1x08_P5.08mm_Horizontal" H 7700 4900 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1715789.pdf" H 7700 4900 50  0001 C CNN
-	1    7700 4900
+P 9350 5300
+F 0 "J5" H 9268 5817 50  0000 C CNN
+F 1 "Screw_Terminal_01x08" H 9268 5726 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-8-5.08_1x08_P5.08mm_Horizontal" H 9350 5300 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1715789.pdf" H 9350 5300 50  0001 C CNN
+	1    9350 5300
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 4700 8250 4700
-Text Label 8250 4900 2    50   ~ 0
+	9550 5100 9900 5100
+Text Label 9900 5300 2    50   ~ 0
 Mosfet1
-Text Label 8250 5100 2    50   ~ 0
+Text Label 9900 5500 2    50   ~ 0
 Mosfet2
-Text Label 8250 5300 2    50   ~ 0
+Text Label 9900 5700 2    50   ~ 0
 Mosfet3
 Wire Wire Line
-	8250 4900 7900 4900
+	9900 5300 9550 5300
 Wire Wire Line
-	7900 5100 8250 5100
+	9550 5500 9900 5500
 Wire Wire Line
-	8250 5300 7900 5300
+	9900 5700 9550 5700
 Wire Wire Line
-	7900 4600 8350 4600
+	9550 5000 10000 5000
 Wire Wire Line
-	8350 4600 8350 4800
+	10000 5000 10000 5200
 Wire Wire Line
-	7900 5200 8350 5200
-Connection ~ 8350 5200
+	9550 5600 10000 5600
+Connection ~ 10000 5600
 Wire Wire Line
-	8350 5200 8350 5300
+	10000 5600 10000 5700
 Wire Wire Line
-	8350 5000 7900 5000
-Connection ~ 8350 5000
+	10000 5400 9550 5400
+Connection ~ 10000 5400
 Wire Wire Line
-	8350 5000 8350 5200
+	10000 5400 10000 5600
 Wire Wire Line
-	7900 4800 8350 4800
-Connection ~ 8350 4800
+	9550 5200 10000 5200
+Connection ~ 10000 5200
 Wire Wire Line
-	8350 4800 8350 5000
+	10000 5200 10000 5400
 $Comp
 L power:GND #PWR0121
 U 1 1 5E292799
-P 8350 5300
-F 0 "#PWR0121" H 8350 5050 50  0001 C CNN
-F 1 "GND" H 8355 5127 50  0000 C CNN
-F 2 "" H 8350 5300 50  0001 C CNN
-F 3 "" H 8350 5300 50  0001 C CNN
-	1    8350 5300
+P 10000 5700
+F 0 "#PWR0121" H 10000 5450 50  0001 C CNN
+F 1 "GND" H 10005 5527 50  0000 C CNN
+F 2 "" H 10000 5700 50  0001 C CNN
+F 3 "" H 10000 5700 50  0001 C CNN
+	1    10000 5700
 	-1   0    0    -1  
 $EndComp
-Text Label 8250 4700 2    50   ~ 0
+Text Label 9900 5100 2    50   ~ 0
 Mosfet0
 Wire Wire Line
 	9600 1300 9600 1350
