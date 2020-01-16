@@ -450,69 +450,6 @@ Wire Wire Line
 	1650 6500 1850 6500
 Wire Wire Line
 	1850 6500 1850 6450
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J3
-U 1 1 5E20939C
-P 5350 1200
-F 0 "J3" H 5400 1617 50  0000 C CNN
-F 1 "Conn_02x05" H 5400 1526 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 5350 1200 50  0001 C CNN
-F 3 "~" H 5350 1200 50  0001 C CNN
-	1    5350 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR018
-U 1 1 5E20AEF8
-P 5000 1450
-F 0 "#PWR018" H 5000 1200 50  0001 C CNN
-F 1 "GND" H 5005 1277 50  0000 C CNN
-F 2 "" H 5000 1450 50  0001 C CNN
-F 3 "" H 5000 1450 50  0001 C CNN
-	1    5000 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 1100 5000 1100
-Wire Wire Line
-	5000 1100 5000 1200
-Wire Wire Line
-	5150 1200 5000 1200
-Connection ~ 5000 1200
-Wire Wire Line
-	5000 1200 5000 1400
-Wire Wire Line
-	5150 1400 5000 1400
-Connection ~ 5000 1400
-Wire Wire Line
-	5000 1400 5000 1450
-Wire Wire Line
-	5150 1000 5000 1000
-Wire Wire Line
-	5000 1000 5000 950 
-$Comp
-L power:+3V3 #PWR017
-U 1 1 5E21B065
-P 5000 950
-F 0 "#PWR017" H 5000 800 50  0001 C CNN
-F 1 "+3V3" H 5015 1123 50  0000 C CNN
-F 2 "" H 5000 950 50  0001 C CNN
-F 3 "" H 5000 950 50  0001 C CNN
-	1    5000 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 1000 6000 1000
-Wire Wire Line
-	5650 1100 6000 1100
-Text Label 6000 1000 2    50   ~ 0
-SWDIO
-Text Label 6000 1100 2    50   ~ 0
-SWDCLK
-Text Label 6000 1400 2    50   ~ 0
-~RESET
-Wire Wire Line
-	5650 1400 6000 1400
 Wire Wire Line
 	6850 1250 6500 1250
 Text Label 6500 1250 0    50   ~ 0
@@ -1330,4 +1267,37 @@ Wire Wire Line
 	3950 5750 3950 5700
 Wire Wire Line
 	3950 5700 4100 5700
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E200A2F
+P 6700 2250
+F 0 "H1" H 6800 2296 50  0000 L CNN
+F 1 "MountingHole" H 6800 2205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6700 2250 50  0001 C CNN
+F 3 "~" H 6700 2250 50  0001 C CNN
+	1    6700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E21A8E2
+P 6700 2450
+F 0 "H2" H 6800 2496 50  0000 L CNN
+F 1 "MountingHole" H 6800 2405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6700 2450 50  0001 C CNN
+F 3 "~" H 6700 2450 50  0001 C CNN
+	1    6700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E220938
+P 6700 2650
+F 0 "H3" H 6800 2696 50  0000 L CNN
+F 1 "MountingHole" H 6800 2605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6700 2650 50  0001 C CNN
+F 3 "~" H 6700 2650 50  0001 C CNN
+	1    6700 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
