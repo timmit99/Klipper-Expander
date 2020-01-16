@@ -46,41 +46,6 @@ F 3 "" H 1350 850 50  0001 C CNN
 	1    1350 850 
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3V3 #PWR012
-U 1 1 5E207BBA
-P 2600 850
-F 0 "#PWR012" H 2600 700 50  0001 C CNN
-F 1 "+3V3" H 2615 1023 50  0000 C CNN
-F 2 "" H 2600 850 50  0001 C CNN
-F 3 "" H 2600 850 50  0001 C CNN
-	1    2600 850 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 1550 2600 1450
-$Comp
-L Device:LED D1
-U 1 1 5E207BFA
-P 2600 1300
-F 0 "D1" V 2639 1183 50  0000 R CNN
-F 1 "LED" V 2548 1183 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 2600 1300 50  0001 C CNN
-F 3 "~" H 2600 1300 50  0001 C CNN
-	1    2600 1300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5E207C00
-P 2600 1000
-F 0 "R3" H 2530 954 50  0000 R CNN
-F 1 "1K" H 2530 1045 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2530 1000 50  0001 C CNN
-F 3 "~" H 2600 1000 50  0001 C CNN
-	1    2600 1000
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1350 850  1550 850 
 Wire Wire Line
@@ -705,18 +670,14 @@ Mosfet1
 Wire Wire Line
 	10000 2650 10000 2000
 Connection ~ 10000 2650
-Text GLabel 2350 1650 2    50   Input ~ 0
+Text GLabel 2350 1550 2    50   Input ~ 0
 PWM0
-Text GLabel 2350 1750 2    50   Input ~ 0
+Text GLabel 2350 1650 2    50   Input ~ 0
 PWM1
-Text GLabel 2350 1850 2    50   Input ~ 0
+Text GLabel 2350 1750 2    50   Input ~ 0
 PWM2
-Text GLabel 2350 1950 2    50   Input ~ 0
+Text GLabel 2350 1850 2    50   Input ~ 0
 PWM3
-Wire Wire Line
-	2600 1550 2350 1550
-Text Label 2450 1550 0    50   ~ 0
-LED
 Wire Wire Line
 	1250 4550 1250 4600
 Wire Wire Line
@@ -1289,4 +1250,43 @@ F 3 "~" H 6700 2450 50  0001 C CNN
 	1    6700 2450
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+3V3 #PWR012
+U 1 1 5E207BBA
+P 2850 1250
+F 0 "#PWR012" H 2850 1100 50  0001 C CNN
+F 1 "+3V3" H 2865 1423 50  0000 C CNN
+F 2 "" H 2850 1250 50  0001 C CNN
+F 3 "" H 2850 1250 50  0001 C CNN
+	1    2850 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1950 2850 1850
+$Comp
+L Device:LED D1
+U 1 1 5E207BFA
+P 2850 1700
+F 0 "D1" V 2889 1583 50  0000 R CNN
+F 1 "LED" V 2798 1583 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 2850 1700 50  0001 C CNN
+F 3 "~" H 2850 1700 50  0001 C CNN
+	1    2850 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E207C00
+P 2850 1400
+F 0 "R3" H 2780 1354 50  0000 R CNN
+F 1 "1K" H 2780 1445 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2780 1400 50  0001 C CNN
+F 3 "~" H 2850 1400 50  0001 C CNN
+	1    2850 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 1950 2350 1950
+Text Label 2700 1950 0    50   ~ 0
+LED
 $EndSCHEMATC
