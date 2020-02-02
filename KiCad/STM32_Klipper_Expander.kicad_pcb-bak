@@ -2404,7 +2404,7 @@
   (gr_text "Vin  M1" (at 134 77 180) (layer F.SilkS) (tstamp 5E20831A)
     (effects (font (size 1.5 1.5) (thickness 0.2)))
   )
-  (gr_text "Gnd  Vin" (at 162 76.25 180) (layer F.SilkS) (tstamp 5E20831B)
+  (gr_text "Gnd  Vin" (at 162 77 180) (layer F.SilkS) (tstamp 5E20831B)
     (effects (font (size 1.5 1.5) (thickness 0.2)))
   )
   (gr_text Boot (at 171.25 76.75) (layer F.SilkS) (tstamp 5E20B6E6)

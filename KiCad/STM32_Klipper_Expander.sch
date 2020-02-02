@@ -22,6 +22,8 @@ F 1 "0.1uF" H 1464 1045 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1388 850 50  0001 C CNN
 F 3 "~" H 1350 1000 50  0001 C CNN
 F 4 "C49678" H 1350 1000 50  0001 C CNN "LCSC"
+F 5 "CC0805KRX7R9BB104" H 1464 1054 50  0001 C CNN "MPN"
+F 6 "302010165" H 1464 1054 50  0001 C CNN "SKU"
 	1    1350 1000
 	-1   0    0    1   
 $EndComp
@@ -47,13 +49,6 @@ F 3 "" H 1350 850 50  0001 C CNN
 	1    1350 850 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 850  1550 850 
-Wire Wire Line
-	1550 850  1550 1350
-Connection ~ 1350 850 
-Wire Wire Line
-	1650 850  1650 1350
 $Comp
 L Device:C C3
 U 1 1 5E2103A9
@@ -63,6 +58,8 @@ F 1 "0.1uF" H 1964 1045 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1888 850 50  0001 C CNN
 F 3 "~" H 1850 1000 50  0001 C CNN
 F 4 "C49678" H 1850 1000 50  0001 C CNN "LCSC"
+F 5 "CC0805KRX7R9BB104" H 1964 1054 50  0001 C CNN "MPN"
+F 6 "302010165" H 1964 1054 50  0001 C CNN "SKU"
 	1    1850 1000
 	1    0    0    1   
 $EndComp
@@ -88,13 +85,6 @@ F 3 "" H 1850 850 50  0001 C CNN
 	1    1850 850 
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1850 850  1650 850 
-Connection ~ 1850 850 
-Text Label 850  1550 0    50   ~ 0
-~RESET
-Wire Wire Line
-	1150 1550 850  1550
 $Comp
 L MCU_ST_STM32F0:STM32F042F6Px U1
 U 1 1 5E1D92D4
@@ -104,19 +94,10 @@ F 1 "STM32F042F6Px" H 1900 1300 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 1250 1350 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 1750 2050 50  0001 C CNN
 F 4 "C81000" H 1750 2050 50  0001 C CNN "LCSC"
+F 5 "STM32F042F6P6" H 1750 2050 50  0001 C CNN "MPN"
 	1    1750 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1150 2250 950  2250
-Wire Wire Line
-	1150 2350 950  2350
-Text Label 750  2700 0    50   ~ 0
-BOOT0
-Text Label 950  2250 0    50   ~ 0
-SDA
-Text Label 950  2350 0    50   ~ 0
-SCL
 $Comp
 L power:GND #PWR05
 U 1 1 5E24EF3D
@@ -137,6 +118,7 @@ F 1 "AP2127K-3.3" H 1650 3801 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1650 3875 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/AP2127.pdf" H 1650 3650 50  0001 C CNN
 F 4 "C156285" H 1650 3550 50  0001 C CNN "LCSC"
+F 5 "AP2127K-3.3TRG1" H 1650 3550 50  0001 C CNN "MPN"
 	1    1650 3550
 	1    0    0    -1  
 $EndComp
@@ -149,6 +131,8 @@ F 1 "4.7uF" H 2264 3645 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2188 3450 50  0001 C CNN
 F 3 "~" H 2150 3600 50  0001 C CNN
 F 4 "C1779" H 2150 3600 50  0001 C CNN "LCSC"
+F 5 "CC0805KKX5R8BB475" H 2264 3654 50  0001 C CNN "MPN"
+F 6 "302010146" H 2264 3654 50  0001 C CNN "SKU"
 	1    2150 3600
 	1    0    0    1   
 $EndComp
@@ -163,9 +147,6 @@ F 3 "" H 2150 3450 50  0001 C CNN
 	1    2150 3450
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2150 3450 1950 3450
-Connection ~ 2150 3450
 $Comp
 L Device:C C2
 U 1 1 5E2641AC
@@ -175,6 +156,8 @@ F 1 "4.7uF" H 1264 3645 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1188 3450 50  0001 C CNN
 F 3 "~" H 1150 3600 50  0001 C CNN
 F 4 "C1779" H 1150 3600 50  0001 C CNN "LCSC"
+F 5 "CC0805KKX5R8BB475" H 1264 3654 50  0001 C CNN "MPN"
+F 6 "302010146" H 1264 3654 50  0001 C CNN "SKU"
 	1    1150 3600
 	-1   0    0    1   
 $EndComp
@@ -189,53 +172,6 @@ F 3 "" H 1650 3950 50  0001 C CNN
 	1    1650 3950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1150 3450 1300 3450
-Wire Wire Line
-	1150 3450 900  3450
-Connection ~ 1150 3450
-Text Label 900  3450 0    50   ~ 0
-VBUS
-Wire Wire Line
-	2150 3750 2150 3900
-Wire Wire Line
-	2150 3900 1650 3900
-Wire Wire Line
-	1150 3900 1150 3750
-Wire Wire Line
-	1650 3850 1650 3900
-Connection ~ 1650 3900
-Wire Wire Line
-	1650 3900 1150 3900
-Wire Wire Line
-	1650 3950 1650 3900
-Wire Wire Line
-	1350 3550 1300 3550
-Wire Wire Line
-	1300 3550 1300 3450
-Connection ~ 1300 3450
-Wire Wire Line
-	1300 3450 1350 3450
-Wire Wire Line
-	2350 2350 2700 2350
-Wire Wire Line
-	2350 2450 2700 2450
-Wire Wire Line
-	2350 2550 2700 2550
-Wire Wire Line
-	2350 2650 2700 2650
-Text Label 2700 2350 2    50   ~ 0
-D-
-Text Label 2700 2450 2    50   ~ 0
-D+
-Text Label 2700 2550 2    50   ~ 0
-SWDIO
-Text Label 2700 2650 2    50   ~ 0
-SWDCLK
-Text Label 1700 4900 0    50   ~ 0
-SDA
-Text Label 1700 5000 0    50   ~ 0
-SCL
 $Comp
 L power:GND #PWR016
 U 1 1 5E2B30B5
@@ -258,12 +194,6 @@ F 3 "" H 1750 4800 50  0001 C CNN
 	1    1750 4800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1750 5150 1750 5100
-Wire Wire Line
-	1750 5100 1900 5100
-Wire Wire Line
-	1750 4800 1900 4800
 $Comp
 L power:+3V3 #PWR06
 U 1 1 5E2DED3F
@@ -286,21 +216,6 @@ F 3 "" H 2650 6550 50  0001 C CNN
 	1    2650 6550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 6050 2600 6050
-Wire Wire Line
-	2600 6050 2600 5950
-Wire Wire Line
-	2700 6150 2650 6150
-Wire Wire Line
-	2650 6150 2650 6200
-Wire Wire Line
-	2650 6500 2650 6550
-Wire Wire Line
-	2650 6150 2350 6150
-Connection ~ 2650 6150
-Text Label 2350 6150 0    50   ~ 0
-BOOT0
 $Comp
 L Connector:USB_B_Micro J1
 U 1 1 5E308B4B
@@ -309,24 +224,10 @@ F 0 "J1" H 3557 1617 50  0000 C CNN
 F 1 "USB_B_Micro" H 3557 1526 50  0000 C CNN
 F 2 "TRA_KiCad_Footprints:Molex-105017-0001-USBMicroB" H 3650 1100 50  0001 C CNN
 F 3 "~" H 3650 1100 50  0001 C CNN
+F 4 "1050170001" H 3500 1150 50  0001 C CNN "MPN"
 	1    3500 1150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 950  4000 950 
-Wire Wire Line
-	3800 1350 3850 1350
-Wire Wire Line
-	3850 1350 3850 1600
-Wire Wire Line
-	3850 1600 3500 1600
-Wire Wire Line
-	3400 1600 3400 1550
-Wire Wire Line
-	3500 1550 3500 1600
-Connection ~ 3500 1600
-Wire Wire Line
-	3500 1600 3400 1600
 $Comp
 L power:GND #PWR014
 U 1 1 5E324531
@@ -338,16 +239,6 @@ F 3 "" H 3850 1600 50  0001 C CNN
 	1    3850 1600
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 1250 4000 1250
-Wire Wire Line
-	3800 1150 4000 1150
-Text Label 4000 1250 2    50   ~ 0
-D-
-Text Label 4000 1150 2    50   ~ 0
-D+
-Text Label 4000 950  2    50   ~ 0
-VBUS
 $Comp
 L Switch:SW_SPST SW2
 U 1 1 5E3398ED
@@ -381,7 +272,6 @@ F 3 "" H 1150 6200 50  0001 C CNN
 	1    1150 6200
 	-1   0    0    -1  
 $EndComp
-Connection ~ 3850 1600
 $Comp
 L Device:R R2
 U 1 1 5E1DEAAC
@@ -391,36 +281,11 @@ F 1 "10K" H 1580 6345 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1580 6300 50  0001 C CNN
 F 3 "~" H 1650 6300 50  0001 C CNN
 F 4 "C17414" H 1650 6300 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-0710KL" H 1580 6354 50  0001 C CNN "MPN"
+F 6 "301010361" H 1580 6354 50  0001 C CNN "SKU"
 	1    1650 6300
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	1950 6100 1650 6100
-Wire Wire Line
-	1650 6100 1650 6150
-Wire Wire Line
-	1250 6100 1150 6100
-Text Label 1950 6100 2    50   ~ 0
-~RESET
-Connection ~ 1650 6100
-Wire Wire Line
-	1150 6100 1150 6200
-Wire Wire Line
-	1650 6450 1650 6500
-Wire Wire Line
-	1650 6500 1850 6500
-Wire Wire Line
-	1850 6500 1850 6450
-Wire Wire Line
-	6850 1250 6500 1250
-Text Label 6500 1250 0    50   ~ 0
-SWDIO
-Text Label 6500 1350 0    50   ~ 0
-SWDCLK
-Text Label 6500 1450 0    50   ~ 0
-~RESET
-Wire Wire Line
-	6850 1450 6500 1450
 $Comp
 L power:+3V3 #PWR019
 U 1 1 5E23223F
@@ -432,8 +297,6 @@ F 3 "" H 6400 950 50  0001 C CNN
 	1    6400 950 
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 1000 6400 950 
 $Comp
 L Connector_Generic:Conn_01x03 J4
 U 1 1 5E23D4FF
@@ -445,10 +308,6 @@ F 3 "~" H 7050 1350 50  0001 C CNN
 	1    7050 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 1350 6400 1300
-Wire Wire Line
-	6400 1350 6850 1350
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:IRLML6344TRPBF Q1
 U 1 1 5E269A78
@@ -457,58 +316,20 @@ F 0 "Q1" V 9767 800 60  0000 C CNN
 F 1 "IRLML6344TRPBF" V 9661 800 60  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9700 1000 60  0001 L CNN
 F 3 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 9700 1100 60  0001 L CNN
-F 4 "C20917" V 9500 800 50  0001 C CNN "LCSC"
-F 5 "IRLML6344TRPBFCT-ND" H 9700 1200 60  0001 L CNN "Digi-Key_PN"
-F 6 "IRLML6344TRPBF" H 9700 1300 60  0001 L CNN "MPN"
-F 7 "Discrete Semiconductor Products" H 9700 1400 60  0001 L CNN "Category"
-F 8 "Transistors - FETs, MOSFETs - Single" H 9700 1500 60  0001 L CNN "Family"
-F 9 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 9700 1600 60  0001 L CNN "DK_Datasheet_Link"
-F 10 "/product-detail/en/infineon-technologies/IRLML6344TRPBF/IRLML6344TRPBFCT-ND/2538168" H 9700 1700 60  0001 L CNN "DK_Detail_Page"
-F 11 "MOSFET N-CH 30V 5A SOT23" H 9700 1800 60  0001 L CNN "Description"
-F 12 "Infineon Technologies" H 9700 1900 60  0001 L CNN "Manufacturer"
-F 13 "Active" H 9700 2000 60  0001 L CNN "Status"
-F 14 "AO3400A" V 9500 800 50  0001 C CNN "Alternate PN#"
+F 4 "AO3400A" V 9500 800 50  0001 C CNN "Alternate PN#"
+F 5 "Discrete Semiconductor Products" H 9700 1400 60  0001 L CNN "Category"
+F 6 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 9700 1600 60  0001 L CNN "DK_Datasheet_Link"
+F 7 "/product-detail/en/infineon-technologies/IRLML6344TRPBF/IRLML6344TRPBFCT-ND/2538168" H 9700 1700 60  0001 L CNN "DK_Detail_Page"
+F 8 "MOSFET N-CH 30V 5A SOT23" H 9700 1800 60  0001 L CNN "Description"
+F 9 "IRLML6344TRPBFCT-ND" H 9700 1200 60  0001 L CNN "Digi-Key_PN"
+F 10 "Transistors - FETs, MOSFETs - Single" H 9700 1500 60  0001 L CNN "Family"
+F 11 "C20917" V 9500 800 50  0001 C CNN "LCSC"
+F 12 "IRLML6344TRPBF" H 9700 1300 60  0001 L CNN "MPN"
+F 13 "Infineon Technologies" H 9700 1900 60  0001 L CNN "Manufacturer"
+F 14 "Active" H 9700 2000 60  0001 L CNN "Status"
 	1    9500 800 
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	10500 5800 10850 5800
-Text Label 10850 6000 2    50   ~ 0
-Mosfet1
-Text Label 10850 6200 2    50   ~ 0
-Mosfet2
-Text Label 10850 6400 2    50   ~ 0
-Mosfet3
-Wire Wire Line
-	10850 6000 10500 6000
-Wire Wire Line
-	10500 6200 10850 6200
-Wire Wire Line
-	10850 6400 10500 6400
-Wire Wire Line
-	10950 5700 10950 5900
-Wire Wire Line
-	10500 6300 10950 6300
-Wire Wire Line
-	10950 6100 10500 6100
-Connection ~ 10950 6100
-Wire Wire Line
-	10950 6100 10950 6300
-Wire Wire Line
-	10500 5900 10950 5900
-Connection ~ 10950 5900
-Wire Wire Line
-	10950 5900 10950 6100
-Text Label 10850 5800 2    50   ~ 0
-Mosfet0
-Wire Wire Line
-	9600 1400 9600 1450
-Wire Wire Line
-	9600 1450 9650 1450
-Wire Wire Line
-	9600 1450 9550 1450
-Text GLabel 9550 1450 0    50   Input ~ 0
-PWM0
 $Comp
 L power:GND #PWR021
 U 1 1 5E2B7E60
@@ -520,22 +341,6 @@ F 3 "" H 10000 1500 50  0001 C CNN
 	1    10000 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9950 1450 10000 1450
-Wire Wire Line
-	10000 1450 10000 1500
-Wire Wire Line
-	10000 800  9700 800 
-Wire Wire Line
-	9300 800  8950 800 
-Text Label 8950 800  0    50   ~ 0
-Mosfet0
-Connection ~ 9600 1450
-Wire Wire Line
-	10000 1450 10000 800 
-Connection ~ 10000 1450
-Text GLabel 9600 5100 0    50   Input ~ 0
-PWM3
 $Comp
 L power:GND #PWR024
 U 1 1 5E2F045D
@@ -547,21 +352,6 @@ F 3 "" H 10050 5150 50  0001 C CNN
 	1    10050 5150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10000 5100 10050 5100
-Wire Wire Line
-	10050 5100 10050 5150
-Wire Wire Line
-	10050 4450 9750 4450
-Wire Wire Line
-	9350 4450 9000 4450
-Text Label 9000 4450 0    50   ~ 0
-Mosfet3
-Wire Wire Line
-	10050 5100 10050 4450
-Connection ~ 10050 5100
-Text GLabel 9550 3850 0    50   Input ~ 0
-PWM2
 $Comp
 L power:GND #PWR023
 U 1 1 5E2F4A7A
@@ -573,21 +363,6 @@ F 3 "" H 10000 3900 50  0001 C CNN
 	1    10000 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9950 3850 10000 3850
-Wire Wire Line
-	10000 3850 10000 3900
-Wire Wire Line
-	10000 3200 9700 3200
-Wire Wire Line
-	9300 3200 8950 3200
-Text Label 8950 3200 0    50   ~ 0
-Mosfet2
-Wire Wire Line
-	10000 3850 10000 3200
-Connection ~ 10000 3850
-Text GLabel 9550 2650 0    50   Input ~ 0
-PWM1
 $Comp
 L power:GND #PWR022
 U 1 1 5E2FBAB2
@@ -599,35 +374,6 @@ F 3 "" H 10000 2700 50  0001 C CNN
 	1    10000 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9950 2650 10000 2650
-Wire Wire Line
-	10000 2650 10000 2700
-Wire Wire Line
-	10000 2000 9700 2000
-Wire Wire Line
-	9300 2000 8950 2000
-Text Label 8950 2000 0    50   ~ 0
-Mosfet1
-Wire Wire Line
-	10000 2650 10000 2000
-Connection ~ 10000 2650
-Text GLabel 2350 1550 2    50   Input ~ 0
-PWM0
-Text GLabel 2350 1650 2    50   Input ~ 0
-PWM1
-Text GLabel 2350 1750 2    50   Input ~ 0
-PWM2
-Text GLabel 2350 1850 2    50   Input ~ 0
-PWM3
-Wire Wire Line
-	1250 4550 1250 4600
-Wire Wire Line
-	1450 4550 1350 4550
-Wire Wire Line
-	1450 4600 1450 4550
-Wire Wire Line
-	1250 5000 1250 4900
 $Comp
 L Device:R R5
 U 1 1 5E3A449E
@@ -637,6 +383,8 @@ F 1 "4.7K" H 1380 4795 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1380 4750 50  0001 C CNN
 F 3 "~" H 1450 4750 50  0001 C CNN
 F 4 "C17673" H 1450 4750 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-074K7L" H 1380 4804 50  0001 C CNN "MPN"
+F 6 "301010306" H 1380 4804 50  0001 C CNN "SKU"
 	1    1450 4750
 	-1   0    0    1   
 $EndComp
@@ -649,6 +397,8 @@ F 1 "4.7K" H 1180 4795 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1180 4750 50  0001 C CNN
 F 3 "~" H 1250 4750 50  0001 C CNN
 F 4 "C17673" H 1250 4750 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-074K7L" H 1250 4750 50  0001 C CNN "MPN"
+F 6 "301010306" H 1250 4750 50  0001 C CNN "SKU"
 	1    1250 4750
 	1    0    0    1   
 $EndComp
@@ -674,9 +424,6 @@ F 3 "" H 1350 4550 50  0001 C CNN
 	1    1350 4550
 	-1   0    0    -1  
 $EndComp
-Connection ~ 1350 4550
-Wire Wire Line
-	1350 4550 1250 4550
 $Comp
 L Device:R R7
 U 1 1 5E1F1329
@@ -686,6 +433,8 @@ F 1 "100" H 9530 1295 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9530 1250 50  0001 C CNN
 F 3 "~" H 9600 1250 50  0001 C CNN
 F 4 "C17408" H 9600 1250 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-07100RL" H 9530 1304 50  0001 C CNN "MPN"
+F 6 "301010319" H 9530 1304 50  0001 C CNN "SKU"
 	1    9600 1250
 	1    0    0    1   
 $EndComp
@@ -700,12 +449,6 @@ F 3 "~" H 9100 6000 50  0001 C CNN
 	1    9100 6000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9300 5900 9400 5900
-Wire Wire Line
-	9300 6000 9400 6000
-Text Label 9850 5900 2    50   ~ 0
-Vin
 $Comp
 L power:GND #PWR020
 U 1 1 5E347E6E
@@ -717,34 +460,6 @@ F 3 "" H 9400 6000 50  0001 C CNN
 	1    9400 6000
 	1    0    0    -1  
 $EndComp
-Text Label 11100 5700 2    50   ~ 0
-Vin
-Wire Wire Line
-	10500 5700 10950 5700
-Connection ~ 10950 5700
-Wire Wire Line
-	10950 5700 11100 5700
-Wire Wire Line
-	9600 2600 9600 2650
-Wire Wire Line
-	9600 2650 9650 2650
-Wire Wire Line
-	9600 2650 9550 2650
-Connection ~ 9600 2650
-Wire Wire Line
-	9600 3800 9600 3850
-Wire Wire Line
-	9600 3850 9650 3850
-Wire Wire Line
-	9600 3850 9550 3850
-Connection ~ 9600 3850
-Wire Wire Line
-	9650 5050 9650 5100
-Wire Wire Line
-	9650 5100 9700 5100
-Wire Wire Line
-	9650 5100 9600 5100
-Connection ~ 9650 5100
 $Comp
 L Connector:Screw_Terminal_01x08 J6
 U 1 1 5E270F48
@@ -767,8 +482,6 @@ F 3 "~" H 2900 6050 50  0001 C CNN
 	1    2900 6050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9700 5900 9850 5900
 $Comp
 L Device:Fuse F1
 U 1 1 5E55778D
@@ -780,10 +493,6 @@ F 3 "~" H 9550 5900 50  0001 C CNN
 	1    9550 5900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1450 4900 1900 4900
-Wire Wire Line
-	1250 5000 1900 5000
 $Comp
 L power:+3V3 #PWR0101
 U 1 1 5E5F5649
@@ -806,12 +515,6 @@ F 3 "" H 6450 5850 50  0001 C CNN
 	1    6450 5850
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 5700 6500 5700
-Wire Wire Line
-	6400 5800 6450 5800
-Wire Wire Line
-	6450 5800 6450 5850
 $Comp
 L Connector_Generic:Conn_01x02 J8
 U 1 1 5E5F565D
@@ -823,10 +526,6 @@ F 3 "~" H 6200 5800 50  0001 C CNN
 	1    6200 5800
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6500 5550 6500 5700
-Text GLabel 6500 5450 1    50   Input ~ 0
-T0
 $Comp
 L Device:C C5
 U 1 1 5E638426
@@ -836,6 +535,8 @@ F 1 "10uF" H 6914 5895 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6838 5700 50  0001 C CNN
 F 3 "~" H 6800 5850 50  0001 C CNN
 F 4 "C15850" H 6800 5850 50  0001 C CNN "LCSC"
+F 5 "CC0805ZKY5V6BB106 " H 6914 5904 50  0001 C CNN "MPN"
+F 6 "302010158" H 6914 5904 50  0001 C CNN "SKU"
 	1    6800 5850
 	1    0    0    1   
 $EndComp
@@ -850,18 +551,6 @@ F 3 "" H 6800 6000 50  0001 C CNN
 	1    6800 6000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 5700 6800 5700
-Connection ~ 6500 5700
-Wire Wire Line
-	6600 5550 6500 5550
-Wire Wire Line
-	6500 5550 6500 5450
-Connection ~ 6500 5550
-Wire Wire Line
-	6900 5550 7000 5550
-Wire Wire Line
-	7000 5550 7000 5450
 $Comp
 L power:+3V3 #PWR0104
 U 1 1 5E65AD0F
@@ -884,12 +573,6 @@ F 3 "" H 7700 5850 50  0001 C CNN
 	1    7700 5850
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	7650 5700 7750 5700
-Wire Wire Line
-	7650 5800 7700 5800
-Wire Wire Line
-	7700 5800 7700 5850
 $Comp
 L Connector_Generic:Conn_01x02 J9
 U 1 1 5E65AD1E
@@ -901,10 +584,6 @@ F 3 "~" H 7450 5800 50  0001 C CNN
 	1    7450 5800
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7750 5550 7750 5700
-Text GLabel 7750 5450 1    50   Input ~ 0
-T1
 $Comp
 L Device:C C6
 U 1 1 5E65AD26
@@ -914,6 +593,8 @@ F 1 "10uF" H 8164 5895 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8088 5700 50  0001 C CNN
 F 3 "~" H 8050 5850 50  0001 C CNN
 F 4 "C15850" H 8050 5850 50  0001 C CNN "LCSC"
+F 5 "CC0805ZKY5V6BB106 " H 8164 5904 50  0001 C CNN "MPN"
+F 6 "302010158" H 8164 5904 50  0001 C CNN "SKU"
 	1    8050 5850
 	1    0    0    1   
 $EndComp
@@ -928,32 +609,6 @@ F 3 "" H 8050 6000 50  0001 C CNN
 	1    8050 6000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	7750 5700 8050 5700
-Connection ~ 7750 5700
-Wire Wire Line
-	7850 5550 7750 5550
-Wire Wire Line
-	7750 5550 7750 5450
-Connection ~ 7750 5550
-Wire Wire Line
-	8150 5550 8250 5550
-Wire Wire Line
-	8250 5550 8250 5450
-Text GLabel 2350 2050 2    50   Input ~ 0
-T1
-Text GLabel 2350 2150 2    50   Input ~ 0
-T0
-Text GLabel 2350 2250 2    50   Input ~ 0
-GPIO
-Text GLabel 1150 2550 0    50   Input ~ 0
-Neopixel
-Wire Wire Line
-	1100 2700 1100 2650
-Wire Wire Line
-	1100 2650 1150 2650
-Wire Wire Line
-	750  2700 1100 2700
 $Comp
 L 74xGxx:74LVC1G17 U3
 U 1 1 5E739CB3
@@ -963,6 +618,7 @@ F 1 "74LVC1G17" H 5250 3650 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 5550 3800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 5550 3800 50  0001 C CNN
 F 4 "C124293" H 5550 3800 50  0001 C CNN "LCSC"
+F 5 "74LVC1G17SE-7" H 5350 4100 50  0001 C CNN "MPN"
 	1    5550 3800
 	1    0    0    -1  
 $EndComp
@@ -977,16 +633,6 @@ F 3 "" H 5550 3900 50  0001 C CNN
 	1    5550 3900
 	1    0    0    -1  
 $EndComp
-Text GLabel 5150 3800 0    50   Input ~ 0
-Neopixel
-Wire Wire Line
-	5800 3800 5950 3800
-Wire Wire Line
-	5250 3800 5150 3800
-Text Label 5550 3400 3    50   ~ 0
-VBUS
-Wire Wire Line
-	5550 3400 5550 3700
 $Comp
 L Connector_Generic:Conn_01x01 J10
 U 1 1 5E7955B3
@@ -1009,16 +655,6 @@ F 3 "~" H 6150 3800 50  0001 C CNN
 	1    6150 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5950 3500 5900 3500
-Wire Wire Line
-	5900 3500 5900 3700
-Wire Wire Line
-	5900 3700 5950 3700
-Wire Wire Line
-	5950 3900 5900 3900
-Wire Wire Line
-	5900 3900 5900 3950
 $Comp
 L power:GND #PWR0108
 U 1 1 5E7AA9F0
@@ -1030,8 +666,6 @@ F 3 "" H 5900 3950 50  0001 C CNN
 	1    5900 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 4100 5600 0    50   Input ~ 0
-GPIO
 $Comp
 L Connector_Generic:Conn_01x02 J12
 U 1 1 5E87152E
@@ -1054,10 +688,6 @@ F 3 "" H 3950 5750 50  0001 C CNN
 	1    3950 5750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3950 5750 3950 5700
-Wire Wire Line
-	3950 5700 4100 5700
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5E200A2F
@@ -1091,8 +721,6 @@ F 3 "" H 2850 1250 50  0001 C CNN
 	1    2850 1250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2850 1950 2850 1850
 $Comp
 L Device:LED D1
 U 1 1 5E207BFA
@@ -1102,6 +730,8 @@ F 1 "LED" V 2798 1583 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 2850 1700 50  0001 C CNN
 F 3 "~" H 2850 1700 50  0001 C CNN
 F 4 "C84256" V 2850 1700 50  0001 C CNN "LCSC"
+F 5 "17-215SURC/S530-A2/TR8 " H 2889 1683 50  0001 C CNN "MPN"
+F 6 "304090046" H 2889 1683 50  0001 C CNN "SKU"
 	1    2850 1700
 	0    -1   -1   0   
 $EndComp
@@ -1114,13 +744,11 @@ F 1 "1K" H 2780 1445 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2780 1400 50  0001 C CNN
 F 3 "~" H 2850 1400 50  0001 C CNN
 F 4 "C17513" H 2850 1400 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-071KL" H 2780 1454 50  0001 C CNN "MPN"
+F 6 "301010311" H 2780 1454 50  0001 C CNN "SKU"
 	1    2850 1400
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2850 1950 2350 1950
-Text Label 2700 1950 0    50   ~ 0
-LED
 $Comp
 L Device:R R1
 U 1 1 5E336EF9
@@ -1130,6 +758,8 @@ F 1 "10K" H 2580 6395 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2580 6350 50  0001 C CNN
 F 3 "~" H 2650 6350 50  0001 C CNN
 F 4 "C17414" H 2650 6350 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-0710KL" H 2580 6404 50  0001 C CNN "MPN"
+F 6 "301010361" H 2580 6404 50  0001 C CNN "SKU"
 	1    2650 6350
 	1    0    0    1   
 $EndComp
@@ -1142,6 +772,8 @@ F 1 "10K" H 6680 5595 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6680 5550 50  0001 C CNN
 F 3 "~" H 6750 5550 50  0001 C CNN
 F 4 "C17414" H 6750 5550 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-0710KL" H 6680 5604 50  0001 C CNN "MPN"
+F 6 "301010361" H 6680 5604 50  0001 C CNN "SKU"
 	1    6750 5550
 	0    -1   1    0   
 $EndComp
@@ -1154,6 +786,8 @@ F 1 "10K" H 7930 5595 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7930 5550 50  0001 C CNN
 F 3 "~" H 8000 5550 50  0001 C CNN
 F 4 "C17414" H 8000 5550 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-0710KL" H 7930 5604 50  0001 C CNN "MPN"
+F 6 "301010361" H 7930 5604 50  0001 C CNN "SKU"
 	1    8000 5550
 	0    -1   1    0   
 $EndComp
@@ -1166,6 +800,8 @@ F 1 "10K" H 9780 5145 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9780 5100 50  0001 C CNN
 F 3 "~" H 9850 5100 50  0001 C CNN
 F 4 "C17414" H 9850 5100 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-0710KL" H 9780 5154 50  0001 C CNN "MPN"
+F 6 "301010361" H 9780 5154 50  0001 C CNN "SKU"
 	1    9850 5100
 	0    -1   1    0   
 $EndComp
@@ -1178,6 +814,8 @@ F 1 "10K" H 9730 3895 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9730 3850 50  0001 C CNN
 F 3 "~" H 9800 3850 50  0001 C CNN
 F 4 "C17414" H 9800 3850 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-0710KL" H 9730 3904 50  0001 C CNN "MPN"
+F 6 "301010361" H 9730 3904 50  0001 C CNN "SKU"
 	1    9800 3850
 	0    -1   1    0   
 $EndComp
@@ -1190,6 +828,8 @@ F 1 "10K" H 9730 2695 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9730 2650 50  0001 C CNN
 F 3 "~" H 9800 2650 50  0001 C CNN
 F 4 "C17414" H 9800 2650 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-0710KL" H 9730 2704 50  0001 C CNN "MPN"
+F 6 "301010361" H 9730 2704 50  0001 C CNN "SKU"
 	1    9800 2650
 	0    -1   1    0   
 $EndComp
@@ -1202,6 +842,8 @@ F 1 "10K" H 9730 1495 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9730 1450 50  0001 C CNN
 F 3 "~" H 9800 1450 50  0001 C CNN
 F 4 "C17414" H 9800 1450 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-0710KL" H 9730 1504 50  0001 C CNN "MPN"
+F 6 "301010361" H 9730 1504 50  0001 C CNN "SKU"
 	1    9800 1450
 	0    -1   1    0   
 $EndComp
@@ -1214,6 +856,8 @@ F 1 "100" H 9530 2495 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9530 2450 50  0001 C CNN
 F 3 "~" H 9600 2450 50  0001 C CNN
 F 4 "C17408" H 9600 2450 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-07100RL" H 9530 2504 50  0001 C CNN "MPN"
+F 6 "301010319" H 9530 2504 50  0001 C CNN "SKU"
 	1    9600 2450
 	1    0    0    1   
 $EndComp
@@ -1226,6 +870,8 @@ F 1 "100" H 9580 4945 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9580 4900 50  0001 C CNN
 F 3 "~" H 9650 4900 50  0001 C CNN
 F 4 "C17408" H 9650 4900 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-07100RL" H 9580 4954 50  0001 C CNN "MPN"
+F 6 "301010319" H 9580 4954 50  0001 C CNN "SKU"
 	1    9650 4900
 	1    0    0    1   
 $EndComp
@@ -1238,6 +884,8 @@ F 1 "100" H 9530 3695 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9530 3650 50  0001 C CNN
 F 3 "~" H 9600 3650 50  0001 C CNN
 F 4 "C17408" H 9600 3650 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-07100RL" H 9530 3704 50  0001 C CNN "MPN"
+F 6 "301010319" H 9530 3704 50  0001 C CNN "SKU"
 	1    9600 3650
 	1    0    0    1   
 $EndComp
@@ -1249,17 +897,17 @@ F 0 "Q4" V 9817 4450 60  0000 C CNN
 F 1 "IRLML6344TRPBF" V 9711 4450 60  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9750 4650 60  0001 L CNN
 F 3 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 9750 4750 60  0001 L CNN
-F 4 "C20917" V 9550 4450 50  0001 C CNN "LCSC"
-F 5 "IRLML6344TRPBFCT-ND" H 9750 4850 60  0001 L CNN "Digi-Key_PN"
-F 6 "IRLML6344TRPBF" H 9750 4950 60  0001 L CNN "MPN"
-F 7 "Discrete Semiconductor Products" H 9750 5050 60  0001 L CNN "Category"
-F 8 "Transistors - FETs, MOSFETs - Single" H 9750 5150 60  0001 L CNN "Family"
-F 9 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 9750 5250 60  0001 L CNN "DK_Datasheet_Link"
-F 10 "/product-detail/en/infineon-technologies/IRLML6344TRPBF/IRLML6344TRPBFCT-ND/2538168" H 9750 5350 60  0001 L CNN "DK_Detail_Page"
-F 11 "MOSFET N-CH 30V 5A SOT23" H 9750 5450 60  0001 L CNN "Description"
-F 12 "Infineon Technologies" H 9750 5550 60  0001 L CNN "Manufacturer"
-F 13 "Active" H 9750 5650 60  0001 L CNN "Status"
-F 14 "AO3400A" V 9550 4450 50  0001 C CNN "Alternate PN#"
+F 4 "AO3400A" V 9550 4450 50  0001 C CNN "Alternate PN#"
+F 5 "Discrete Semiconductor Products" H 9750 5050 60  0001 L CNN "Category"
+F 6 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 9750 5250 60  0001 L CNN "DK_Datasheet_Link"
+F 7 "/product-detail/en/infineon-technologies/IRLML6344TRPBF/IRLML6344TRPBFCT-ND/2538168" H 9750 5350 60  0001 L CNN "DK_Detail_Page"
+F 8 "MOSFET N-CH 30V 5A SOT23" H 9750 5450 60  0001 L CNN "Description"
+F 9 "IRLML6344TRPBFCT-ND" H 9750 4850 60  0001 L CNN "Digi-Key_PN"
+F 10 "Transistors - FETs, MOSFETs - Single" H 9750 5150 60  0001 L CNN "Family"
+F 11 "C20917" V 9550 4450 50  0001 C CNN "LCSC"
+F 12 "IRLML6344TRPBF" H 9750 4950 60  0001 L CNN "MPN"
+F 13 "Infineon Technologies" H 9750 5550 60  0001 L CNN "Manufacturer"
+F 14 "Active" H 9750 5650 60  0001 L CNN "Status"
 	1    9550 4450
 	0    -1   -1   0   
 $EndComp
@@ -1271,17 +919,17 @@ F 0 "Q3" V 9767 3200 60  0000 C CNN
 F 1 "IRLML6344TRPBF" V 9661 3200 60  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9700 3400 60  0001 L CNN
 F 3 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 9700 3500 60  0001 L CNN
-F 4 "C20917" V 9500 3200 50  0001 C CNN "LCSC"
-F 5 "IRLML6344TRPBFCT-ND" H 9700 3600 60  0001 L CNN "Digi-Key_PN"
-F 6 "IRLML6344TRPBF" H 9700 3700 60  0001 L CNN "MPN"
-F 7 "Discrete Semiconductor Products" H 9700 3800 60  0001 L CNN "Category"
-F 8 "Transistors - FETs, MOSFETs - Single" H 9700 3900 60  0001 L CNN "Family"
-F 9 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 9700 4000 60  0001 L CNN "DK_Datasheet_Link"
-F 10 "/product-detail/en/infineon-technologies/IRLML6344TRPBF/IRLML6344TRPBFCT-ND/2538168" H 9700 4100 60  0001 L CNN "DK_Detail_Page"
-F 11 "MOSFET N-CH 30V 5A SOT23" H 9700 4200 60  0001 L CNN "Description"
-F 12 "Infineon Technologies" H 9700 4300 60  0001 L CNN "Manufacturer"
-F 13 "Active" H 9700 4400 60  0001 L CNN "Status"
-F 14 "AO3400A" V 9500 3200 50  0001 C CNN "Alternate PN#"
+F 4 "AO3400A" V 9500 3200 50  0001 C CNN "Alternate PN#"
+F 5 "Discrete Semiconductor Products" H 9700 3800 60  0001 L CNN "Category"
+F 6 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 9700 4000 60  0001 L CNN "DK_Datasheet_Link"
+F 7 "/product-detail/en/infineon-technologies/IRLML6344TRPBF/IRLML6344TRPBFCT-ND/2538168" H 9700 4100 60  0001 L CNN "DK_Detail_Page"
+F 8 "MOSFET N-CH 30V 5A SOT23" H 9700 4200 60  0001 L CNN "Description"
+F 9 "IRLML6344TRPBFCT-ND" H 9700 3600 60  0001 L CNN "Digi-Key_PN"
+F 10 "Transistors - FETs, MOSFETs - Single" H 9700 3900 60  0001 L CNN "Family"
+F 11 "C20917" V 9500 3200 50  0001 C CNN "LCSC"
+F 12 "IRLML6344TRPBF" H 9700 3700 60  0001 L CNN "MPN"
+F 13 "Infineon Technologies" H 9700 4300 60  0001 L CNN "Manufacturer"
+F 14 "Active" H 9700 4400 60  0001 L CNN "Status"
 	1    9500 3200
 	0    -1   -1   0   
 $EndComp
@@ -1293,17 +941,17 @@ F 0 "Q2" V 9767 2000 60  0000 C CNN
 F 1 "IRLML6344TRPBF" V 9661 2000 60  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9700 2200 60  0001 L CNN
 F 3 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 9700 2300 60  0001 L CNN
-F 4 "C20917" V 9500 2000 50  0001 C CNN "LCSC"
-F 5 "IRLML6344TRPBFCT-ND" H 9700 2400 60  0001 L CNN "Digi-Key_PN"
-F 6 "IRLML6344TRPBF" H 9700 2500 60  0001 L CNN "MPN"
-F 7 "Discrete Semiconductor Products" H 9700 2600 60  0001 L CNN "Category"
-F 8 "Transistors - FETs, MOSFETs - Single" H 9700 2700 60  0001 L CNN "Family"
-F 9 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 9700 2800 60  0001 L CNN "DK_Datasheet_Link"
-F 10 "/product-detail/en/infineon-technologies/IRLML6344TRPBF/IRLML6344TRPBFCT-ND/2538168" H 9700 2900 60  0001 L CNN "DK_Detail_Page"
-F 11 "MOSFET N-CH 30V 5A SOT23" H 9700 3000 60  0001 L CNN "Description"
-F 12 "Infineon Technologies" H 9700 3100 60  0001 L CNN "Manufacturer"
-F 13 "Active" H 9700 3200 60  0001 L CNN "Status"
-F 14 "AO3400A" V 9500 2000 50  0001 C CNN "Alternate PN#"
+F 4 "AO3400A" V 9500 2000 50  0001 C CNN "Alternate PN#"
+F 5 "Discrete Semiconductor Products" H 9700 2600 60  0001 L CNN "Category"
+F 6 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 9700 2800 60  0001 L CNN "DK_Datasheet_Link"
+F 7 "/product-detail/en/infineon-technologies/IRLML6344TRPBF/IRLML6344TRPBFCT-ND/2538168" H 9700 2900 60  0001 L CNN "DK_Detail_Page"
+F 8 "MOSFET N-CH 30V 5A SOT23" H 9700 3000 60  0001 L CNN "Description"
+F 9 "IRLML6344TRPBFCT-ND" H 9700 2400 60  0001 L CNN "Digi-Key_PN"
+F 10 "Transistors - FETs, MOSFETs - Single" H 9700 2700 60  0001 L CNN "Family"
+F 11 "C20917" V 9500 2000 50  0001 C CNN "LCSC"
+F 12 "IRLML6344TRPBF" H 9700 2500 60  0001 L CNN "MPN"
+F 13 "Infineon Technologies" H 9700 3100 60  0001 L CNN "Manufacturer"
+F 14 "Active" H 9700 3200 60  0001 L CNN "Status"
 	1    9500 2000
 	0    -1   -1   0   
 $EndComp
@@ -1316,7 +964,409 @@ F 1 "10K" H 6330 1195 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6330 1150 50  0001 C CNN
 F 3 "~" H 6400 1150 50  0001 C CNN
 F 4 "C17414" H 6400 1150 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-0710KL" H 6330 1204 50  0001 C CNN "MPN"
+F 6 "301010361" H 6330 1204 50  0001 C CNN "SKU"
 	1    6400 1150
 	1    0    0    1   
 $EndComp
+Text Label 850  1550 0    50   ~ 0
+~RESET
+Text Label 750  2700 0    50   ~ 0
+BOOT0
+Text Label 950  2250 0    50   ~ 0
+SDA
+Text Label 950  2350 0    50   ~ 0
+SCL
+Text Label 900  3450 0    50   ~ 0
+VBUS
+Text Label 2700 2350 2    50   ~ 0
+D-
+Text Label 2700 2450 2    50   ~ 0
+D+
+Text Label 2700 2550 2    50   ~ 0
+SWDIO
+Text Label 2700 2650 2    50   ~ 0
+SWDCLK
+Text Label 1700 4900 0    50   ~ 0
+SDA
+Text Label 1700 5000 0    50   ~ 0
+SCL
+Text Label 2350 6150 0    50   ~ 0
+BOOT0
+Text Label 4000 1250 2    50   ~ 0
+D-
+Text Label 4000 1150 2    50   ~ 0
+D+
+Text Label 4000 950  2    50   ~ 0
+VBUS
+Text Label 1950 6100 2    50   ~ 0
+~RESET
+Text Label 6500 1250 0    50   ~ 0
+SWDIO
+Text Label 6500 1350 0    50   ~ 0
+SWDCLK
+Text Label 6500 1450 0    50   ~ 0
+~RESET
+Text Label 10850 6000 2    50   ~ 0
+Mosfet1
+Text Label 10850 6200 2    50   ~ 0
+Mosfet2
+Text Label 10850 6400 2    50   ~ 0
+Mosfet3
+Text Label 10850 5800 2    50   ~ 0
+Mosfet0
+Text GLabel 9550 1450 0    50   Input ~ 0
+PWM0
+Text Label 8950 800  0    50   ~ 0
+Mosfet0
+Text GLabel 9600 5100 0    50   Input ~ 0
+PWM3
+Text Label 9000 4450 0    50   ~ 0
+Mosfet3
+Text GLabel 9550 3850 0    50   Input ~ 0
+PWM2
+Text Label 8950 3200 0    50   ~ 0
+Mosfet2
+Text GLabel 9550 2650 0    50   Input ~ 0
+PWM1
+Text Label 8950 2000 0    50   ~ 0
+Mosfet1
+Text GLabel 2350 1550 2    50   Input ~ 0
+PWM0
+Text GLabel 2350 1650 2    50   Input ~ 0
+PWM1
+Text GLabel 2350 1750 2    50   Input ~ 0
+PWM2
+Text GLabel 2350 1850 2    50   Input ~ 0
+PWM3
+Text Label 9850 5900 2    50   ~ 0
+Vin
+Text Label 11100 5700 2    50   ~ 0
+Vin
+Text GLabel 6500 5450 1    50   Input ~ 0
+T0
+Text GLabel 7750 5450 1    50   Input ~ 0
+T1
+Text GLabel 2350 2050 2    50   Input ~ 0
+T1
+Text GLabel 2350 2150 2    50   Input ~ 0
+T0
+Text GLabel 2350 2250 2    50   Input ~ 0
+GPIO
+Text GLabel 1150 2550 0    50   Input ~ 0
+Neopixel
+Text GLabel 5150 3800 0    50   Input ~ 0
+Neopixel
+Text Label 5550 3400 3    50   ~ 0
+VBUS
+Text GLabel 4100 5600 0    50   Input ~ 0
+GPIO
+Text Label 2700 1950 0    50   ~ 0
+LED
+Wire Wire Line
+	1350 850  1550 850 
+Wire Wire Line
+	1550 850  1550 1350
+Wire Wire Line
+	1650 850  1650 1350
+Wire Wire Line
+	1850 850  1650 850 
+Wire Wire Line
+	1150 1550 850  1550
+Wire Wire Line
+	1150 2250 950  2250
+Wire Wire Line
+	1150 2350 950  2350
+Wire Wire Line
+	2150 3450 1950 3450
+Wire Wire Line
+	1150 3450 1300 3450
+Wire Wire Line
+	1150 3450 900  3450
+Wire Wire Line
+	2150 3750 2150 3900
+Wire Wire Line
+	2150 3900 1650 3900
+Wire Wire Line
+	1150 3900 1150 3750
+Wire Wire Line
+	1650 3850 1650 3900
+Wire Wire Line
+	1650 3900 1150 3900
+Wire Wire Line
+	1650 3950 1650 3900
+Wire Wire Line
+	1350 3550 1300 3550
+Wire Wire Line
+	1300 3550 1300 3450
+Wire Wire Line
+	1300 3450 1350 3450
+Wire Wire Line
+	2350 2350 2700 2350
+Wire Wire Line
+	2350 2450 2700 2450
+Wire Wire Line
+	2350 2550 2700 2550
+Wire Wire Line
+	2350 2650 2700 2650
+Wire Wire Line
+	1750 5150 1750 5100
+Wire Wire Line
+	1750 5100 1900 5100
+Wire Wire Line
+	1750 4800 1900 4800
+Wire Wire Line
+	2700 6050 2600 6050
+Wire Wire Line
+	2600 6050 2600 5950
+Wire Wire Line
+	2700 6150 2650 6150
+Wire Wire Line
+	2650 6150 2650 6200
+Wire Wire Line
+	2650 6500 2650 6550
+Wire Wire Line
+	2650 6150 2350 6150
+Wire Wire Line
+	3800 950  4000 950 
+Wire Wire Line
+	3800 1350 3850 1350
+Wire Wire Line
+	3850 1350 3850 1600
+Wire Wire Line
+	3850 1600 3500 1600
+Wire Wire Line
+	3400 1600 3400 1550
+Wire Wire Line
+	3500 1550 3500 1600
+Wire Wire Line
+	3500 1600 3400 1600
+Wire Wire Line
+	3800 1250 4000 1250
+Wire Wire Line
+	3800 1150 4000 1150
+Wire Wire Line
+	1950 6100 1650 6100
+Wire Wire Line
+	1650 6100 1650 6150
+Wire Wire Line
+	1250 6100 1150 6100
+Wire Wire Line
+	1150 6100 1150 6200
+Wire Wire Line
+	1650 6450 1650 6500
+Wire Wire Line
+	1650 6500 1850 6500
+Wire Wire Line
+	1850 6500 1850 6450
+Wire Wire Line
+	6850 1250 6500 1250
+Wire Wire Line
+	6850 1450 6500 1450
+Wire Wire Line
+	6400 1000 6400 950 
+Wire Wire Line
+	6400 1350 6400 1300
+Wire Wire Line
+	6400 1350 6850 1350
+Wire Wire Line
+	10500 5800 10850 5800
+Wire Wire Line
+	10850 6000 10500 6000
+Wire Wire Line
+	10500 6200 10850 6200
+Wire Wire Line
+	10850 6400 10500 6400
+Wire Wire Line
+	10950 5700 10950 5900
+Wire Wire Line
+	10500 6300 10950 6300
+Wire Wire Line
+	10950 6100 10500 6100
+Wire Wire Line
+	10950 6100 10950 6300
+Wire Wire Line
+	10500 5900 10950 5900
+Wire Wire Line
+	10950 5900 10950 6100
+Wire Wire Line
+	9600 1400 9600 1450
+Wire Wire Line
+	9600 1450 9650 1450
+Wire Wire Line
+	9600 1450 9550 1450
+Wire Wire Line
+	9950 1450 10000 1450
+Wire Wire Line
+	10000 1450 10000 1500
+Wire Wire Line
+	10000 800  9700 800 
+Wire Wire Line
+	9300 800  8950 800 
+Wire Wire Line
+	10000 1450 10000 800 
+Wire Wire Line
+	10000 5100 10050 5100
+Wire Wire Line
+	10050 5100 10050 5150
+Wire Wire Line
+	10050 4450 9750 4450
+Wire Wire Line
+	9350 4450 9000 4450
+Wire Wire Line
+	10050 5100 10050 4450
+Wire Wire Line
+	9950 3850 10000 3850
+Wire Wire Line
+	10000 3850 10000 3900
+Wire Wire Line
+	10000 3200 9700 3200
+Wire Wire Line
+	9300 3200 8950 3200
+Wire Wire Line
+	10000 3850 10000 3200
+Wire Wire Line
+	9950 2650 10000 2650
+Wire Wire Line
+	10000 2650 10000 2700
+Wire Wire Line
+	10000 2000 9700 2000
+Wire Wire Line
+	9300 2000 8950 2000
+Wire Wire Line
+	10000 2650 10000 2000
+Wire Wire Line
+	1250 4550 1250 4600
+Wire Wire Line
+	1450 4550 1350 4550
+Wire Wire Line
+	1450 4600 1450 4550
+Wire Wire Line
+	1250 5000 1250 4900
+Wire Wire Line
+	1350 4550 1250 4550
+Wire Wire Line
+	9300 5900 9400 5900
+Wire Wire Line
+	9300 6000 9400 6000
+Wire Wire Line
+	10500 5700 10950 5700
+Wire Wire Line
+	10950 5700 11100 5700
+Wire Wire Line
+	9600 2600 9600 2650
+Wire Wire Line
+	9600 2650 9650 2650
+Wire Wire Line
+	9600 2650 9550 2650
+Wire Wire Line
+	9600 3800 9600 3850
+Wire Wire Line
+	9600 3850 9650 3850
+Wire Wire Line
+	9600 3850 9550 3850
+Wire Wire Line
+	9650 5050 9650 5100
+Wire Wire Line
+	9650 5100 9700 5100
+Wire Wire Line
+	9650 5100 9600 5100
+Wire Wire Line
+	9700 5900 9850 5900
+Wire Wire Line
+	1450 4900 1900 4900
+Wire Wire Line
+	1250 5000 1900 5000
+Wire Wire Line
+	6400 5700 6500 5700
+Wire Wire Line
+	6400 5800 6450 5800
+Wire Wire Line
+	6450 5800 6450 5850
+Wire Wire Line
+	6500 5550 6500 5700
+Wire Wire Line
+	6500 5700 6800 5700
+Wire Wire Line
+	6600 5550 6500 5550
+Wire Wire Line
+	6500 5550 6500 5450
+Wire Wire Line
+	6900 5550 7000 5550
+Wire Wire Line
+	7000 5550 7000 5450
+Wire Wire Line
+	7650 5700 7750 5700
+Wire Wire Line
+	7650 5800 7700 5800
+Wire Wire Line
+	7700 5800 7700 5850
+Wire Wire Line
+	7750 5550 7750 5700
+Wire Wire Line
+	7750 5700 8050 5700
+Wire Wire Line
+	7850 5550 7750 5550
+Wire Wire Line
+	7750 5550 7750 5450
+Wire Wire Line
+	8150 5550 8250 5550
+Wire Wire Line
+	8250 5550 8250 5450
+Wire Wire Line
+	1100 2700 1100 2650
+Wire Wire Line
+	1100 2650 1150 2650
+Wire Wire Line
+	750  2700 1100 2700
+Wire Wire Line
+	5800 3800 5950 3800
+Wire Wire Line
+	5250 3800 5150 3800
+Wire Wire Line
+	5550 3400 5550 3700
+Wire Wire Line
+	5950 3500 5900 3500
+Wire Wire Line
+	5900 3500 5900 3700
+Wire Wire Line
+	5900 3700 5950 3700
+Wire Wire Line
+	5950 3900 5900 3900
+Wire Wire Line
+	5900 3900 5900 3950
+Wire Wire Line
+	3950 5750 3950 5700
+Wire Wire Line
+	3950 5700 4100 5700
+Wire Wire Line
+	2850 1950 2850 1850
+Wire Wire Line
+	2850 1950 2350 1950
+Connection ~ 1350 850 
+Connection ~ 1850 850 
+Connection ~ 2150 3450
+Connection ~ 1150 3450
+Connection ~ 1650 3900
+Connection ~ 1300 3450
+Connection ~ 2650 6150
+Connection ~ 3500 1600
+Connection ~ 3850 1600
+Connection ~ 1650 6100
+Connection ~ 10950 6100
+Connection ~ 10950 5900
+Connection ~ 9600 1450
+Connection ~ 10000 1450
+Connection ~ 10050 5100
+Connection ~ 10000 3850
+Connection ~ 10000 2650
+Connection ~ 1350 4550
+Connection ~ 10950 5700
+Connection ~ 9600 2650
+Connection ~ 9600 3850
+Connection ~ 9650 5100
+Connection ~ 6500 5700
+Connection ~ 6500 5550
+Connection ~ 7750 5700
+Connection ~ 7750 5550
 $EndSCHEMATC
