@@ -289,24 +289,13 @@ $EndComp
 $Comp
 L power:+3V3 #PWR019
 U 1 1 5E23223F
-P 6400 950
-F 0 "#PWR019" H 6400 800 50  0001 C CNN
-F 1 "+3V3" H 6415 1123 50  0000 C CNN
-F 2 "" H 6400 950 50  0001 C CNN
-F 3 "" H 6400 950 50  0001 C CNN
-	1    6400 950 
+P 5000 1050
+F 0 "#PWR019" H 5000 900 50  0001 C CNN
+F 1 "+3V3" H 5015 1223 50  0000 C CNN
+F 2 "" H 5000 1050 50  0001 C CNN
+F 3 "" H 5000 1050 50  0001 C CNN
+	1    5000 1050
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J4
-U 1 1 5E23D4FF
-P 7050 1350
-F 0 "J4" H 7130 1392 50  0000 L CNN
-F 1 "Conn_01x03" H 7130 1301 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7050 1350 50  0001 C CNN
-F 3 "~" H 7050 1350 50  0001 C CNN
-	1    7050 1350
-	1    0    0    -1  
 $EndComp
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:IRLML6344TRPBF Q1
@@ -955,20 +944,6 @@ F 14 "Active" H 9700 3200 60  0001 L CNN "Status"
 	1    9500 2000
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R6
-U 1 1 5E3EBE0E
-P 6400 1150
-F 0 "R6" H 6330 1104 50  0000 R CNN
-F 1 "10K" H 6330 1195 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6330 1150 50  0001 C CNN
-F 3 "~" H 6400 1150 50  0001 C CNN
-F 4 "C17414" H 6400 1150 50  0001 C CNN "LCSC"
-F 5 "RC0805JR-0710KL" H 6330 1204 50  0001 C CNN "MPN"
-F 6 "301010361" H 6330 1204 50  0001 C CNN "SKU"
-	1    6400 1150
-	1    0    0    1   
-$EndComp
 Text Label 850  1550 0    50   ~ 0
 ~RESET
 Text Label 750  2700 0    50   ~ 0
@@ -1000,12 +975,6 @@ D+
 Text Label 4000 950  2    50   ~ 0
 VBUS
 Text Label 1950 6100 2    50   ~ 0
-~RESET
-Text Label 6500 1250 0    50   ~ 0
-SWDIO
-Text Label 6500 1350 0    50   ~ 0
-SWDCLK
-Text Label 6500 1450 0    50   ~ 0
 ~RESET
 Text Label 10850 6000 2    50   ~ 0
 Mosfet1
@@ -1160,15 +1129,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 6500 1850 6450
 Wire Wire Line
-	6850 1250 6500 1250
-Wire Wire Line
-	6850 1450 6500 1450
-Wire Wire Line
-	6400 1000 6400 950 
-Wire Wire Line
-	6400 1350 6400 1300
-Wire Wire Line
-	6400 1350 6850 1350
+	5000 1100 5000 1050
 Wire Wire Line
 	10500 5800 10850 5800
 Wire Wire Line
@@ -1369,4 +1330,43 @@ Connection ~ 6500 5700
 Connection ~ 6500 5550
 Connection ~ 7750 5700
 Connection ~ 7750 5550
+Wire Wire Line
+	5000 1450 5450 1450
+Wire Wire Line
+	5000 1450 5000 1400
+Wire Wire Line
+	5450 1550 5100 1550
+Wire Wire Line
+	5450 1350 5100 1350
+Text Label 5100 1550 0    50   ~ 0
+~RESET
+Text Label 5100 1450 0    50   ~ 0
+SWDCLK
+Text Label 5100 1350 0    50   ~ 0
+SWDIO
+$Comp
+L Device:R R6
+U 1 1 5E3EBE0E
+P 5000 1250
+F 0 "R6" H 4930 1204 50  0000 R CNN
+F 1 "10K" H 4930 1295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4930 1250 50  0001 C CNN
+F 3 "~" H 5000 1250 50  0001 C CNN
+F 4 "C17414" H 5000 1250 50  0001 C CNN "LCSC"
+F 5 "RC0805JR-0710KL" H 4930 1304 50  0001 C CNN "MPN"
+F 6 "301010361" H 4930 1304 50  0001 C CNN "SKU"
+	1    5000 1250
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5E23D4FF
+P 5650 1450
+F 0 "J4" H 5730 1492 50  0000 L CNN
+F 1 "Conn_01x03" H 5730 1401 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5650 1450 50  0001 C CNN
+F 3 "~" H 5650 1450 50  0001 C CNN
+	1    5650 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
