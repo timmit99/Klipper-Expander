@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 35)
+    (drawings 36)
     (tracks 362)
     (zones 0)
     (modules 47)
@@ -2305,6 +2305,9 @@
     )
   )
 
+  (gr_text "+   -" (at 161.422 88.819) (layer F.SilkS)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
   (gr_text "Klipper Expansion Board\nTimothy Abraham" (at 125.5 91.25) (layer B.SilkS)
     (effects (font (size 2.5 2.5) (thickness 0.3)) (justify mirror))
   )

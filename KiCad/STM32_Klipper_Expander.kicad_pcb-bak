@@ -317,7 +317,7 @@
   )
 
   (module TRA_KiCad_Footprints:VoronDesign_Text_35x20 locked (layer F.Cu) (tedit 0) (tstamp 5E20B56B)
-    (at 118.25 96.5)
+    (at 118.242 96.5)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
