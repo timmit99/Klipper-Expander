@@ -1,3 +1,6 @@
+# OUTDATED, PLEASE REFER TO THE VORON HARDWARE REPO FOR THE LATEST VERSION
+
+
 # STM32-Klipper-Expander
 
 ![Image no work =(](Images/STM32_Klipper_Expander.png?raw=true)
