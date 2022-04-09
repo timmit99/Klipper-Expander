@@ -1,4 +1,4 @@
-# OUTDATED, PLEASE REFER TO THE VORON HARDWARE REPO FOR THE LATEST VERSION
+# OUTDATED, PLEASE REFER TO THE [VORON HARDWARE REPO](https://github.com/VoronDesign/Voron-Hardware/tree/master/Klipper_Expander) FOR THE LATEST VERSION
 
 
 # STM32-Klipper-Expander
